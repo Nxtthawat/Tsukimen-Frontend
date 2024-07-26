@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'MN_Engawa';
+  src: url(assets/font/MNEngawa.ttf);
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'MN_Engawa';
+}
