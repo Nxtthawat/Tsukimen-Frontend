@@ -17,7 +17,7 @@ const logout = () => {
     }).then((result) => {
         if (result.isConfirmed) {
             localStorage.removeItem('token');
-            route.push({ path: '/' });
+            route.push({ path: '/login' });
         }
     });
 };
