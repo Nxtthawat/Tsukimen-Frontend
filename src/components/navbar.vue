@@ -45,6 +45,7 @@ watch(volume, (newVolume) => {
     bgMusic.value.volume = newVolume;
   }
 });
+
 </script>
 
 <template>
@@ -54,11 +55,11 @@ watch(volume, (newVolume) => {
                 <li class="btn btn-outline my-5 md:my-2 md:w-18 md:h-3 ms-5" @click="disconnect()">ออกจากร้าน</li>
             </ul>
             <ul class="mx-auto">
-                <li><img class="md:h-16 md:my-0 my-5 h-12" src="../assets/logo-removebg-preview.png" alt=""></li>
+                <li><img class="md:h-16 md:my-0 my-5 h-12" src="../../public/assets/logo-removebg-preview.png" alt=""></li>
             </ul>
             <ul class="flex w-24 justify-between items-center gap-2 me-5">
                 <li class="btn btn-ghost btn-circle">
-                    <img :src="ref('../assets/ตั้งค่า.PNG')" alt="">
+                    <img src="../../public/assets/ตั้งค่า.PNG" alt="">
                 </li>
                 <li>
                     <div class="dropdown dropdown-end">
@@ -66,7 +67,7 @@ watch(volume, (newVolume) => {
                         <div class="w-10 rounded-full ">
                         <img
                             alt="Ramen Logo"
-                            :src="ref('../assets/โปรไฟล์.PNG')" />
+                            src="../../public/assets/โปรไฟล์.PNG" />
                         </div>
                     </div>
                     <ul

@@ -108,8 +108,6 @@ const filteredCharacters = computed(() => {
   return characters.value.filter(character => character.roomId === roomIdList.value);
 });
 
-const counterImg = ref('../assets/counter2.png');
-
 provide('bgMusic', bgMusic);
 provide('volume', volume);
 </script>
@@ -128,7 +126,7 @@ provide('volume', volume);
                                     {{ console.log(characters) }}
                                     <img :src="value.characters" class="w-[80px]" alt="">
                                 </div>
-                                <img :src="counterImg" class="" alt="">
+                                <img src="../../public/assets/counter2.PNG" class="" alt="">
                             </div>
                         </div>
                     </div>
@@ -137,7 +135,7 @@ provide('volume', volume);
                             <div class="flex justify-center ">
                                 <div class="relative">
                                     <p class="ms-3 text-lg">เลขห้อง: {{ roomIdList }}</p>
-                                    <img src="../assets/chat.png" class="w-[300px]" alt="">
+                                    <img src="../../public/assets/chat.png" class="w-[300px]" alt="">
                                     <div class="absolute top-16 p-1 left-5 w-[260px] h-[230px] overflow-auto">
                                         <div v-for="(message, index) in messages" :key="`message-${index}`" :class="checkMessageType(message)">
                                             <p class="font-bold underline underline-offset-1">{{ message.username }}</p>

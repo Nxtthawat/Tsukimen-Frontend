@@ -72,7 +72,6 @@ const submitName = () =>{
         router.push({path: '/chat'});
     }
 }
-
 </script>
 
 <template>
@@ -100,8 +99,8 @@ const submitName = () =>{
                                 </div>
                             </div>
                             <div class="min-w-96 min-h-24 relative top-10">
-                                <img :src="ref('../assets/MCMale.png')" class="absolute left-5 w-[60px]" alt="">
-                                <img :src="ref('../assets/counter.png')" class="absolute bottom-2" alt="">
+                                <img src="../../public/assets/MCMale.png" class="absolute left-5 w-[60px]" alt="">
+                                <img src="../../public/assets/counter.PNG" class="absolute bottom-2" alt="">
                             </div>
                         </div>
                     </div>
@@ -109,8 +108,8 @@ const submitName = () =>{
                         <div class="mx-auto">
                             <div class="flex justify-center ">
                                 <div class="relative">
-                                    <img src="../assets/chatMenu.png" class="w-[300px]" alt="">
-                                    <img class="absolute w-40 h-40 top-10 left-16 opacity-35" src="../assets/ramen-dealer-removebg-preview.png" alt="">
+                                    <img src="../../public/assets/chatMenu.png" class="w-[300px]" alt="">
+                                    <img class="absolute w-40 h-40 top-10 left-16 opacity-35" src="../../public/assets/ramen-dealer-removebg-preview.png" alt="">
                                     <div class="absolute bottom-10 left-20">
                                         <button class="btn btn-outline w-[150px]" @click="submitName()">เข้าร่วมการสนทนา</button>
                                     </div>
