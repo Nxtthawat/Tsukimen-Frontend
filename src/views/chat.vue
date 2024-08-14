@@ -48,7 +48,7 @@ socket.on('updateUserList', (users) => {
 socket.on('userConnected', (username) => {
     characters.value.push({
         username: username,
-        characters: 'src/assets/MCMale.png',
+        characters: '../../public/assets/MCMale.png',
         roomId: roomIdList.value,
     });
 
