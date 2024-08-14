@@ -61,7 +61,7 @@ const settingsImg = ref('/ตั้งค่า.PNG');
             </ul>
             <ul class="flex w-24 justify-between items-center gap-2 me-5">
                 <li class="btn btn-ghost btn-circle">
-                    <img :src="settingsImg" alt="">
+                    <img src="../../public/assets/ตั้งค่า.PNG" alt="">
                 </li>
                 <li>
                     <div class="dropdown dropdown-end">
@@ -69,7 +69,7 @@ const settingsImg = ref('/ตั้งค่า.PNG');
                         <div class="w-10 rounded-full ">
                         <img
                             alt="Ramen Logo"
-                            :src="pfpImg" />
+                            src="../../public/assets/โปรไฟล์.PNG" />
                         </div>
                     </div>
                     <ul

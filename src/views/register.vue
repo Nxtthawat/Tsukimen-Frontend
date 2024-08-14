@@ -56,7 +56,7 @@ const regis = ()=>{
         return;
     };
 
-    axios.post('localhost:3000/user/register', {
+    axios.post('https://tsukimen-server.onrender.com/user/register', {
         username: username.value,
         email: email.value,
         password: password.value,

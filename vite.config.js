@@ -8,4 +8,5 @@ export default defineConfig({
     assetsDir: 'assets', // Ensure assets are placed in the correct directory
   },
   publicDir: 'public', // Ensure this is set to the correct directory
+  assetsInclude: ['**/*.PNG'], // Include .PNG files as assets
 })
