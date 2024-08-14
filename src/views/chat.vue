@@ -126,7 +126,7 @@ provide('volume', volume);
                                     {{ console.log(characters) }}
                                     <img :src="value.characters" class="w-[80px]" alt="">
                                 </div>
-                                <img src="../../public/assets/counter2.png" class="" alt="">
+                                <img src="../../public/assets/counter2.PNG" class="" alt="">
                             </div>
                         </div>
                     </div>
