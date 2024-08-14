@@ -108,8 +108,6 @@ const filteredCharacters = computed(() => {
   return characters.value.filter(character => character.roomId === roomIdList.value);
 });
 
-const counterImg = ref('../../public/assets/counter2.png');
-
 provide('bgMusic', bgMusic);
 provide('volume', volume);
 </script>
@@ -128,7 +126,7 @@ provide('volume', volume);
                                     {{ console.log(characters) }}
                                     <img :src="value.characters" class="w-[80px]" alt="">
                                 </div>
-                                <img :src="counterImg" class="" alt="">
+                                <img src="../../public/assets/counter2.png" class="" alt="">
                             </div>
                         </div>
                     </div>

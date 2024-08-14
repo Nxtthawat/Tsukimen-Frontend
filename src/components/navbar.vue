@@ -46,8 +46,6 @@ watch(volume, (newVolume) => {
   }
 });
 
-const pfpImg = ref('/โปรไฟล์.PNG');
-const settingsImg = ref('/ตั้งค่า.PNG');
 </script>
 
 <template>

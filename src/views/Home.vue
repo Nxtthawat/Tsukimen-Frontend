@@ -72,9 +72,6 @@ const submitName = () =>{
         router.push({path: '/chat'});
     }
 }
-
-const counterImg = ref('../../public/assets/counter.png');
-
 </script>
 
 <template>
@@ -103,7 +100,7 @@ const counterImg = ref('../../public/assets/counter.png');
                             </div>
                             <div class="min-w-96 min-h-24 relative top-10">
                                 <img src="../../public/assets/MCMale.png" class="absolute left-5 w-[60px]" alt="">
-                                <img :src="counterImg" class="absolute bottom-2" alt="">
+                                <img src="../../public/assets/counter.PNG" class="absolute bottom-2" alt="">
                             </div>
                         </div>
                     </div>
