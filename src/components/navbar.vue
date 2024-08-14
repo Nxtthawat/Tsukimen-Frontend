@@ -58,7 +58,7 @@ watch(volume, (newVolume) => {
             </ul>
             <ul class="flex w-24 justify-between items-center gap-2 me-5">
                 <li class="btn btn-ghost btn-circle">
-                    <img src="../assets/ตั้งค่า.PNG" alt="">
+                    <img :src="ref('../assets/ตั้งค่า.PNG')" alt="">
                 </li>
                 <li>
                     <div class="dropdown dropdown-end">
@@ -66,7 +66,7 @@ watch(volume, (newVolume) => {
                         <div class="w-10 rounded-full ">
                         <img
                             alt="Ramen Logo"
-                            src="../assets/โปรไฟล์.PNG" />
+                            :src="ref('../assets/โปรไฟล์.PNG')" />
                         </div>
                     </div>
                     <ul

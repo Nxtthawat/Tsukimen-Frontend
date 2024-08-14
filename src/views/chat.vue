@@ -11,7 +11,7 @@ const characters = ref([]);
 
 const chatMessage = defineModel('chatMessage');
 const chatContainer = ref(null); // Ref for the chat container
-const socket = io('http://localhost:3000', { query: { anonName: anonName } });
+const socket = io('https://tsukimen-server.onrender.com/', { query: { anonName: anonName } });
 const roomIdList = ref('');
 
 const volume = ref(0.5);
@@ -108,6 +108,8 @@ const filteredCharacters = computed(() => {
   return characters.value.filter(character => character.roomId === roomIdList.value);
 });
 
+const counterImg = ref('../assets/counter2.png');
+
 provide('bgMusic', bgMusic);
 provide('volume', volume);
 </script>
@@ -126,7 +128,7 @@ provide('volume', volume);
                                     {{ console.log(characters) }}
                                     <img :src="value.characters" class="w-[80px]" alt="">
                                 </div>
-                                <img src="../assets/counter2.png" class="" alt="">
+                                <img :src="counterImg" class="" alt="">
                             </div>
                         </div>
                     </div>

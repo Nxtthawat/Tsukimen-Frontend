@@ -14,35 +14,30 @@ const ramenMenu = ref(
         name: 'Tonkotsu Ramen',
         description: 'ราเมนสุกกับน้ำซุปหมู ที่มีรสชาติเข้มข้น และเสิร์ฟพร้อมกับเส้นราเมนที่เป็นเส้นเส้นเล็ก ๆ ที่มีความนุ่ม ๆ และเป็นเส้นเส้นที่เป็นที่นิยมของคนไทย',
         selected: false,
-        image: '../assets/ถ้วย.png',
     },
     {
         id: 2,
         name: 'Shoyu Ramen',
         description: 'ราเมนซุปโชยุ ',
         selected: false,
-        image: '../assets/ถ้วย.png',
     },
     {
         id: 3,
         name: 'Shio Ramen',
         description: 'ราเมนซุปเกลือ',
         selected: false,
-        image: '../assets/ถ้วย.png',
     },
     {
         id: 4,
         name: 'Miso Ramen',
         description: 'ราเมนซุปมิโซะ',
         selected: false,
-        image: '../assets/ถ้วย.png',
     },
     {
         id: 5,
         name: 'Chilli Oil Ramen',
         description: 'ราเมนซุปน้ำมันพริก',
         selected: false,
-        image: '../assets/ถ้วย.png',
     }
 ]
 )
@@ -98,15 +93,15 @@ const submitName = () =>{
                                     <p class="text-center text-xl my-3">วันนี้กินอะไรดี</p>
                                     <ul class="flex flex-row gap-1 justify-center">
                                         <div v-for="ramen in ramenMenu" :key="ramen.id" @click="selectMenu(ramen.id)">
-                                            <li class="cursor-pointer hover:bg-red-500 rounded-lg"><img src="../assets/ถ้วย.PNG" alt="ramenImage"></li>
+                                            <input type="radio" name="ramenMenu" :value="ramen.id"> {{ ramen.name }}</input>
                                         </div>
                                     </ul>
                                     <p class="text-center text-xl mb-3"> เมนู </p>
                                 </div>
                             </div>
                             <div class="min-w-96 min-h-24 relative top-10">
-                                <img src="../assets/MCMale.png" class="absolute left-5 w-[60px]" alt="">
-                                <img src="../assets/counter.png" class="absolute bottom-2" alt="">
+                                <img :src="ref('../assets/MCMale.png')" class="absolute left-5 w-[60px]" alt="">
+                                <img :src="ref('../assets/counter.png')" class="absolute bottom-2" alt="">
                             </div>
                         </div>
                     </div>
