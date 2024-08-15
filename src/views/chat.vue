@@ -48,7 +48,7 @@ socket.on('updateUserList', (users) => {
 socket.on('userConnected', (username) => {
     characters.value.push({
         username: username,
-        characters: '../../public/assets/MCMale.png',
+        characters: '/assets/MCMale.png',
         roomId: roomIdList.value,
     });
 
@@ -119,7 +119,7 @@ provide('volume', volume);
         <div class="mt-10">
             <div class="max-w-7xl w-full">
                 <div class="flex max-w-7xl flex-col lg:flex-row w-full mt-12 lg:mt-0 items-center gap-12">
-                    <div class="w-full flex flex-col items-center justify-center">
+                    <div class="w-full flex flex-col items-center justify-center hidden md:flex">
                         <div class="w-[560px] mx-auto">
                             <div class="w-[560] min-h-24 relative">
                                 <div v-for="(value, index) in filteredCharacters" class="absolute bottom-24" :style="{left: calculateLeftPosition(index) + 'px'}" :key="index">
